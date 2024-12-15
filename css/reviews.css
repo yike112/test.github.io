@@ -1,0 +1,127 @@
+.reviews-content {
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.reviews-content h2 {
+    font-size: 2.5rem;
+    color: #2C3E50;
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.reviews-content h2:after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: #3498DB;
+    margin: 1rem auto;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.review-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-10px);
+}
+
+.review-image {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.review-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.review-card:hover .review-image img {
+    transform: scale(1.05);
+}
+
+.review-text {
+    padding: 2rem;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.review-header h3 {
+    font-size: 1.5rem;
+    color: #2C3E50;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.star {
+    width: 1.2rem;
+    height: 1.2rem;
+    fill: #f1c40f;
+}
+
+.rating span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2C3E50;
+}
+
+.review-date {
+    color: #7F8C8D;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.review-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #34495E;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.reviewer {
+    color: #2C3E50;
+    font-weight: bold;
+    text-align: right;
+}
+
+
+@media (max-width: 768px) {
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .review-image {
+        height: 250px;
+    }
+
+    .review-text {
+        padding: 1.5rem;
+    }
+}

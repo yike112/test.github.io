@@ -1,0 +1,134 @@
+.destination-detail {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #E8F6F3;
+}
+
+.hero-image {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.hero-image:hover img {
+    transform: scale(1.02);
+}
+
+.hero-image h1 {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    color: white;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.content {
+    background: white;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+}
+
+.content .overview {
+    text-align: left;
+}
+
+.content h2 {
+    color: #2C3E50;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.content h2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: #3498DB;
+}
+
+.content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #34495E;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+.content p:last-child {
+    margin-bottom: 0;
+}
+
+.content .destination-image {
+    position: relative;
+    width: 45%;
+    height: auto;
+    float: right;
+    margin: 0 0 2rem 2rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.content .destination-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.content .destination-image:hover img {
+    transform: scale(1.05);
+}
+
+
+.content::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+@media (max-width: 768px) {
+    .hero-image {
+        height: 300px;
+    }
+
+    .hero-image h1 {
+        font-size: 2rem;
+        bottom: 1.5rem;
+        left: 1.5rem;
+    }
+
+    .content {
+        padding: 1.5rem;
+    }
+
+    .content .destination-image {
+        float: none;
+        width: 100%;
+        margin: 0 0 1.5rem 0;
+    }
+}

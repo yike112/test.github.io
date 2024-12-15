@@ -1,0 +1,133 @@
+.contact-content {
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.company-info {
+    background: white;
+    border-radius: 8px;
+    padding: 3rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+}
+
+.company-logo {
+    margin-bottom: 2rem;
+}
+
+.company-logo img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.company-logo h2 {
+    font-size: 2.5rem;
+    color: #2C3E50;
+    margin: 0;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.location .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: #3498DB;
+}
+
+.location p {
+    font-size: 1.2rem;
+    color: #34495E;
+    margin: 0;
+}
+
+.social-media {
+    background: white;
+    border-radius: 8px;
+    padding: 3rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.social-media h2 {
+    font-size: 2rem;
+    color: #2C3E50;
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.social-media h2:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #3498DB;
+    margin: 1rem auto;
+}
+
+.social-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.social-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.social-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-item .icon {
+    width: 3rem;
+    height: 3rem;
+    fill: #3498DB;
+    margin-bottom: 1rem;
+}
+
+.social-info h3 {
+    font-size: 1.2rem;
+    color: #2C3E50;
+    margin-bottom: 0.5rem;
+}
+
+.social-info p {
+    color: #7F8C8D;
+    font-size: 1rem;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .social-links {
+        grid-template-columns: 1fr;
+    }
+
+    .company-logo h2 {
+        font-size: 2rem;
+    }
+
+    .location {
+        flex-direction: column;
+    }
+
+    .social-item {
+        padding: 1.5rem;
+    }
+}
